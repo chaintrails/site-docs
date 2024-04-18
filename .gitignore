@@ -1,4 +1,6 @@
 # Logs
+docs/.vitepress/cache
+docs/.vitepress/dist
 logs
 *.log
 npm-debug.log*
