@@ -1,26 +1,28 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "ChainTrails | Docs",
   description: "Docs related to node/validator setups.",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
+    sidebar: {
+      '/': [
+        {
+          text: 'Networks',
+          collapsed: false,
+          items: [
+            {
+              text: 'Initia',
+              collapsed: true,
+              items: [
+                { text: 'Overview', link: '/networks/initia/' },
+                { text: 'Setup', link: '/networks/initia/setup' },
+                { text: 'Snapshots', link: '/networks/initia/snapshots' }
+              ]
+            },
+          ]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]

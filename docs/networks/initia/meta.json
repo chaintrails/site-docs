@@ -1,0 +1,6 @@
+{
+  "type": "testnet",
+  "network": "initia",
+  "slug": "initiation-1",
+  "service": "initiad"
+}
