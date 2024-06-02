@@ -24,7 +24,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://cc.chaintrails.io';
 
 const snapshotData = ref({
   block: null,
