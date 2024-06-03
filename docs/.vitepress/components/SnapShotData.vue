@@ -6,14 +6,12 @@
       <thead>
         <tr>
           <th>Block Number</th>
-          <th>URL</th>
           <th>Timestamp</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>{{ snapshotData.block }}</td>
-          <td><a :href="snapshotData.url" target="_blank">{{ snapshotData.url }}</a></td>
           <td>{{ snapshotData.timestamp }}</td>
         </tr>
       </tbody>
@@ -54,7 +52,7 @@ async function fetchSnapShotData() {
       console.log('snapshotData:', snapshotData);
 
       // Update the snapshotData reactive object
-      snapshotData.value = {
+      snapshotData.value = { 
         block: recentSnapData.block,
         url: recentSnapData.url,
         timestamp: recentSnapData.timestamp,
